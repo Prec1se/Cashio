@@ -1,8 +1,12 @@
 package com.example.cashio.model;
 
+import java.util.Vector;
+
 public class item {
     private String name;
     private int price, count;
+    private Vector<item> newItems, oldItems;
+    private Vector<item> allItem;
 
     public item(String name, int price, int count) {
         this.name = name;
@@ -20,5 +24,23 @@ public class item {
 
     public int getCount() {
         return count;
+    }
+
+    public Vector<item> getNewItems() {
+        return newItems;
+    }
+
+    public Vector<item> getAllItem() {
+        return allItem;
+    }
+
+    public void setAllItem() {
+        // get items from db and copy them to allItem variable
+    }
+
+    public void addNewItem(String _name, int _price, int _count) {
+        item i = new item(_name, _price, _count);
+        newItems.add(i);
+        // add to db ()
     }
 }

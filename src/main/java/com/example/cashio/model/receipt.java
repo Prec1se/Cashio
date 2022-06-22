@@ -40,4 +40,6 @@ public abstract class receipt {
     }
 
     public Time getTime() { return time; }
+
+
 }

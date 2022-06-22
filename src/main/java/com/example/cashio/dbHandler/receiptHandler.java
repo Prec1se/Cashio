@@ -34,5 +34,7 @@ public class receiptHandler {
 //
 //    public static cashierReceipt getCashierReceipt() {
 //
+//    } static cashierReceipt getCashierReceipt() {
+//
 //    }
 }
