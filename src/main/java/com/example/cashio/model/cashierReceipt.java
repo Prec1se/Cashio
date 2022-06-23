@@ -7,7 +7,7 @@ import java.util.Vector;
 
 public class cashierReceipt extends receipt {
     private int customerMoney;
-    private cashierReceipt lastReceipt;
+    private static cashierReceipt lastReceipt;
     private Vector<cashierReceipt> newReceipt, oldReceipt;
     public cashierReceipt() {
         super();

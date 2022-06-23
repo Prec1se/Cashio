@@ -27,7 +27,6 @@ public class receiptHandler {
             System.exit(0);
         }
     }
-
 //    public static supplyReceipt getSupplyReceipt() {
 //
 //    }

@@ -5,6 +5,8 @@ import java.util.Vector;
 public class item {
     private String name;
     private int price, count;
+    private int minimumCount;
+
     private Vector<item> newItems, oldItems;
     private Vector<item> allItem;
 
@@ -33,6 +35,8 @@ public class item {
     public Vector<item> getAllItem() {
         return allItem;
     }
+
+    public int getMinimumCount() { return minimumCount; }
 
     public void setAllItem() {
         // get items from db and copy them to allItem variable

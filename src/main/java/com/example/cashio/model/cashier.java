@@ -5,4 +5,8 @@ public class cashier extends user{
     public cashier(String userName, int password, int userID) {
         super(userName, password, userID);
     }
+
+    public static void createNewReceipt() {
+
+    }
 }
