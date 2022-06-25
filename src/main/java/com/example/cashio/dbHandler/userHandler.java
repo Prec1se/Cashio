@@ -72,7 +72,7 @@ public class userHandler {
         }
     }
 
-    public Vector<cashier> getAllCashier() {
+    public static Vector<cashier> getAllCashier() {
         Vector<cashier> us = new Vector<cashier>();
         Connection c = null;
         Statement s = null;
@@ -100,7 +100,7 @@ public class userHandler {
         return us;
     }
 
-    public Vector<admin> getAllAdmin() {
+    public static Vector<admin> getAllAdmin() {
         Vector<admin> us = new Vector<admin>();
         Connection c = null;
         Statement s = null;
