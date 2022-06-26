@@ -20,15 +20,15 @@ public class itemHandler {
         return low;
     }
 
-    public static void addItem(String name, int price, int count, int minimumCount) {
+    public static void addItem(item i) {
         try {
             Class.forName("org.sqlite.JDBC");
             Connection c = DriverManager.getConnection("");
             c.setAutoCommit(false);
             Statement s = c.createStatement();
-            String stock = stockStatus(count, minimumCount);
+            String stock = stockStatus(i.getCount(), i.getMinimumCount());
             String sql = "INSERT INTO Item (ItemName, ItemPrice, MinimumCount, InStockCount, StockStatus) " +
-                    "VALUES (name, price, minimumCount, count, stock);";
+                    "VALUES (i.getName(), i.getPrice(), i.getMinimumCount(), i.getCount(), stock);";
             s.executeUpdate(sql);
             s.close();
             c.commit();

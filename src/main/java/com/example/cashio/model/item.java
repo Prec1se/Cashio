@@ -8,7 +8,6 @@ public class item {
     private int price, count;
     private int minimumCount;
 
-    private static Vector<item> newItems, oldItems;
     private static Vector<item> allItem;
 
     public item(String name, int price, int count) {
@@ -29,26 +28,21 @@ public class item {
         return count;
     }
 
-    public static Vector<item> getNewItems() {
-        return newItems;
-    }
-
     public static Vector<item> getAllItem() {
         return allItem;
     }
 
-    public static Vector<item> getOldItems() { return oldItems; }
-
     public int getMinimumCount() { return minimumCount; }
 
-    public static void setOldItems() {
+    public static void setAllItem() {
         // get items from db and copy them to allItem variable
-        oldItems = itemHandler.getAllItem();
+        allItem = itemHandler.getAllItem();
     }
 
     public void addNewItem(String _name, int _price, int _count) {
         item i = new item(_name, _price, _count);
-        newItems.add(i);
+        allItem.add(i);
         // add to db ()
+        itemHandler.addItem(i);
     }
 }
