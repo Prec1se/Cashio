@@ -10,12 +10,12 @@
         <AnchorPane layoutX="299.0" layoutY="600.0" prefHeight="151.0" prefWidth="1306.0" styleClass="black_pane" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <ImageView fitHeight="657.0" fitWidth="821.0" layoutX="98.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/squre3d.jpg" />
+            <Image url="@../../../../../resources/img/squre3d.jpg" />
          </image>
       </ImageView>
         <ImageView fitHeight="92.0" fitWidth="139.0" layoutX="463.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@img/avatar1.png" />
+                <Image url="@../../../../../resources/img/avatar1.png" />
             </image>
         </ImageView>
         <Button layoutX="223.0" layoutY="236.0" mnemonicParsing="false" onAction="#profileButtonclicked" prefHeight="51.0" prefWidth="215.0" text="Profile" />
@@ -26,12 +26,12 @@
       <Button layoutX="568.0" layoutY="349.0" mnemonicParsing="false" onAction="#CashierListPressed" prefHeight="51.0" prefWidth="215.0" text="Cashier List" />
         <ImageView fitHeight="63.0" fitWidth="183.0" layoutX="699.0" layoutY="603.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@img/logo.png" />
+                <Image url="@../../../../../resources/img/logo.png" />
             </image>
         </ImageView>
           <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="240.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
               <image>
-                  <Image url="@img/Poweredby.png" />
+                  <Image url="@../../../../../resources/img/Poweredby.png" />
               </image>
           </ImageView>
     </children>

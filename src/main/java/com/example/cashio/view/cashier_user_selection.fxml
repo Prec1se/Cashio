@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="743.0" fitWidth="1366.0" layoutX="0.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
                <image>
-                  <Image url="@img/UserSelection.jpg" />
+                  <Image url="@../../../../../resources/img/UserSelection.jpg" />
                </image>
             </ImageView>
             <Button layoutX="262.0" layoutY="474.0" mnemonicParsing="false" onAction="#backbuttonpressed" prefHeight="56.0" prefWidth="139.0" text="BACK" />
@@ -32,23 +32,23 @@
             <TextField fx:id="intotal" layoutX="885.0" layoutY="185.0" prefHeight="38.0" prefWidth="201.0" promptText="In total" />
             <ImageView fitHeight="71.0" fitWidth="180.0" layoutX="53.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/Untitled-2.png" />
+                  <Image url="@../../../../../resources/img/Untitled-2.png" />
                </image>
             </ImageView>
             <Label fx:id="label" layoutX="1003.0" layoutY="247.0" prefHeight="85.0" prefWidth="227.0" />
             <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="196.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/avatar1.png" />
+                  <Image url="@../../../../../resources/img/avatar1.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="199.0" layoutY="376.0" pickOnBounds="true">
                <image>
-                  <Image url="@img/Avatar2.png" />
+                  <Image url="@../../../../../resources/img/Avatar2.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="199.0" layoutY="250.0" pickOnBounds="true">
                <image>
-                  <Image url="@img/avatar4.png" />
+                  <Image url="@../../../../../resources/img/avatar4.png" />
                </image>
             </ImageView>
             <Button layoutX="296.0" layoutY="115.0" mnemonicParsing="false" onAction="#user1clicked" prefHeight="65.0" prefWidth="193.0" text="Anik">

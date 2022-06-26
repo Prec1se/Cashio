@@ -16,14 +16,14 @@
             <children>
                 <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@img/Poweredby.png" />
+                        <Image url="@../../../../../resources/img/Poweredby.png" />
                     </image>
                 </ImageView>
             </children>
         </AnchorPane>
         <ImageView fitHeight="92.0" fitWidth="139.0" layoutX="81.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@img/avatar1.png" />
+                <Image url="@../../../../../resources/img/avatar1.png" />
             </image>
         </ImageView>
         <Button layoutX="220.0" layoutY="123.0" mnemonicParsing="false" onAction="#profileButtonclicked" prefHeight="76.0" prefWidth="121.0" text="Profile" />
@@ -33,7 +33,7 @@
         <Button layoutX="231.0" layoutY="437.0" mnemonicParsing="false" onAction="#backbuttonpressed" prefHeight="76.0" prefWidth="121.0" text="Back" />
         <ImageView fitHeight="63.0" fitWidth="183.0" layoutX="131.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@img/logo.png" />
+                <Image url="@../../../../../resources/img/logo.png" />
             </image>
         </ImageView>
         <AnchorPane layoutX="415.0" prefHeight="641.0" prefWidth="893.0" styleClass="white_pane" stylesheets="@style.css" AnchorPane.bottomAnchor="159.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
