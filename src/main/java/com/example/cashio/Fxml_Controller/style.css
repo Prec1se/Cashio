@@ -1,0 +1,16 @@
+.left_pane{
+ -fx-background-color: #034Aff;
+}
+.main_pane{
+ -fx-background-color: #034Aff;
+}
+
+.darkblue_pane {
+            -fx-background-color: #0000cd;
+   }
+.black_pane {
+            -fx-background-color: #000000;
+   }
+   .white_pane {
+               -fx-background-color: #f5f5f5;
+      }
