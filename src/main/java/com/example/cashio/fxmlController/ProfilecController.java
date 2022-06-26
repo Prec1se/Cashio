@@ -1,4 +1,4 @@
-package com.example.cashio;
+package com.example.cashio.fxmlController;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

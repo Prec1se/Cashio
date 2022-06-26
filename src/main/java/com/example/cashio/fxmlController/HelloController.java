@@ -1,4 +1,4 @@
-package com.example.cashio;
+package com.example.cashio.fxmlController;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

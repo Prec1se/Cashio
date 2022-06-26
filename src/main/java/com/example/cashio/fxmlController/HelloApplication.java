@@ -1,4 +1,4 @@
-package com.example.cashio.FxmlController;
+package com.example.cashio.fxmlController;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
