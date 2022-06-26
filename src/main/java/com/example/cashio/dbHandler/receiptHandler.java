@@ -27,6 +27,12 @@ public class receiptHandler {
             System.exit(0);
         }
     }
+
+    public static cashierReceipt getReceipt() {
+        cashierReceipt cr = new cashierReceipt();
+
+        return cr;
+    }
 //    public static supplyReceipt getSupplyReceipt() {
 //
 //    }

@@ -9,4 +9,6 @@ module com.example.cashio {
     opens com.example.cashio.model to javafx.fxml;
     exports com.example.cashio.dbHandler;
     opens com.example.cashio.dbHandler to javafx.fxml;
+    exports com.example.cashio.fxmlController;
+    opens com.example.cashio.fxmlController to javafx.fxml;
 }
