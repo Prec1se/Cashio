@@ -1,6 +1,7 @@
 package com.example.cashio.model;
 
 import java.util.Vector;
+import com.example.cashio.dbHandler.itemHandler;
 
 public class item {
     private String name;
@@ -36,10 +37,13 @@ public class item {
         return allItem;
     }
 
+    public static Vector<item> getOldItems() { return oldItems; }
+
     public int getMinimumCount() { return minimumCount; }
 
-    public void setAllItem() {
+    public static void setOldItems() {
         // get items from db and copy them to allItem variable
+        oldItems = itemHandler.getAllItem();
     }
 
     public void addNewItem(String _name, int _price, int _count) {
