@@ -3,6 +3,7 @@ package com.example.cashio.dbHandler;
 import com.example.cashio.model.cashier;
 import com.example.cashio.model.admin;
 
+import java.io.File;
 import java.sql.*;
 import java.util.Vector;
 
@@ -107,7 +108,9 @@ public class userHandler {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("");
+            c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             s = c.createStatement();

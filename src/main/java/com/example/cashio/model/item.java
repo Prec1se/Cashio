@@ -7,8 +7,8 @@ public class item {
     private int price, count;
     private int minimumCount;
 
-    private Vector<item> newItems, oldItems;
-    private Vector<item> allItem;
+    private static Vector<item> newItems, oldItems;
+    private static Vector<item> allItem;
 
     public item(String name, int price, int count) {
         this.name = name;
@@ -28,11 +28,11 @@ public class item {
         return count;
     }
 
-    public Vector<item> getNewItems() {
+    public static Vector<item> getNewItems() {
         return newItems;
     }
 
-    public Vector<item> getAllItem() {
+    public static Vector<item> getAllItem() {
         return allItem;
     }
 

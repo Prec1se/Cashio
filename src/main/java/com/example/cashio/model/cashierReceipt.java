@@ -6,16 +6,13 @@ import javafx.util.Pair;
 import java.util.Vector;
 
 public class cashierReceipt extends receipt {
-    private int customerMoney;
     private static cashierReceipt lastReceipt;
-    private Vector<cashierReceipt> newReceipt, oldReceipt;
+    private static Vector<cashierReceipt> newReceipt, oldReceipt;
     public cashierReceipt() {
         super();
-        customerMoney = 0;
     }
-    public cashierReceipt(int customerMoney, int totalPrice, Vector<Pair<item, Integer>> itemList) {
+    public cashierReceipt(int totalPrice, Vector<Pair<item, Integer>> itemList) {
         super(totalPrice, itemList);
-        this.customerMoney = customerMoney;
     }
 
     public cashierReceipt getLastReceipt() {
@@ -30,7 +27,8 @@ public class cashierReceipt extends receipt {
         return newReceipt;
     }
 
-    public void addCashierReceipt(int _customerMoney, int _totalPrice, Vector<Pair<item, Integer>> _itemList) {
-        cashierReceipt c = new cashierReceipt(_customerMoney, _totalPrice, _itemList);
+    public static void addCashierReceipt(int _totalPrice, Vector<Pair<item, Integer>> _itemList) {
+        cashierReceipt c = new cashierReceipt(_totalPrice, _itemList);
+        newReceipt.add(c);
     }
 }

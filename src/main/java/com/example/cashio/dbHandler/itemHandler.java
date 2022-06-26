@@ -1,6 +1,10 @@
 package com.example.cashio.dbHandler;
 
+import com.example.cashio.model.item;
+
+import java.io.File;
 import java.sql.*;
+import java.util.Vector;
 
 public class itemHandler {
 
@@ -100,6 +104,36 @@ public class itemHandler {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
+    }
+
+    public static Vector<item> getAllItem() {
+        Vector<item> allItem = null;
+        Connection c = null;
+        Statement s = null;
+
+        try {
+            Class.forName("org.sqlite.JDBC");
+            c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
+            c.setAutoCommit(false);
+
+            s = c.createStatement();
+            String sql = "SELECT * FROM Item;";
+            ResultSet r = s.executeQuery(sql);
+
+            while(r.next()) {
+                String name = r.getString("ItemName");
+                int price = r.getInt("ItemPrice");
+                int count = r.getInt("InStockCount");
+                item x = new item(name, price, count);
+                allItem.add(x);
+            }
+        } catch(SQLException | ClassNotFoundException e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        return allItem;
     }
 
 //    public static Vector<item> searchItem(String name) {
