@@ -3,6 +3,8 @@ package com.example.cashio.model;
 import com.example.cashio.model.receipt;
 import javafx.util.Pair;
 
+import java.sql.Time;
+import java.util.Date;
 import java.util.Vector;
 
 public class cashierReceipt extends receipt {
@@ -15,7 +17,11 @@ public class cashierReceipt extends receipt {
         super(totalPrice, itemList);
     }
 
-    public cashierReceipt getLastReceipt() {
+    public cashierReceipt(int totalPrice, Date date, Time time, Vector<Pair<item, Integer>> itemList) {
+        super(totalPrice, date, time, itemList);
+    }
+
+    public static cashierReceipt getLastReceipt() {
         return lastReceipt;
     }
 

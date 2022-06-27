@@ -23,12 +23,14 @@ public class itemHandler {
     public static void addItem(item i) {
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection c = DriverManager.getConnection("");
+            Connection c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
             Statement s = c.createStatement();
             String stock = stockStatus(i.getCount(), i.getMinimumCount());
             String sql = "INSERT INTO Item (ItemName, ItemPrice, MinimumCount, InStockCount, StockStatus) " +
-                    "VALUES (i.getName(), i.getPrice(), i.getMinimumCount(), i.getCount(), stock);";
+                    "VALUES (i.getName(), Integer.toString(i.getPrice()), Integer.toString(i.getMinimumCount()), Integer.toString(i.getCount()), stock);";
             s.executeUpdate(sql);
             s.close();
             c.commit();
@@ -43,7 +45,9 @@ public class itemHandler {
     public static void updateItemCount(String name, int addCount) {
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection c = DriverManager.getConnection("");
+            Connection c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             Statement s = c.createStatement();
@@ -69,7 +73,9 @@ public class itemHandler {
     public static void updateItemPrice(String name, int newPrice) {
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection c = DriverManager.getConnection("");
+            Connection c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             Statement s = c.createStatement();

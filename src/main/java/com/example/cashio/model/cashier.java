@@ -14,6 +14,7 @@ public class cashier extends user{
         cashierReceipt.addCashierReceipt(_totalPrice, _itemList);
     }
 
-
-
+    public cashierReceipt getLastReceipt() {
+        return cashierReceipt.getLastReceipt();
+    }
 }

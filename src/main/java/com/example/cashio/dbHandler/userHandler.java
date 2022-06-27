@@ -36,7 +36,9 @@ public class userHandler {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("");
+            c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             s = c.createStatement();
@@ -57,7 +59,9 @@ public class userHandler {
         Statement s = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("");
+            c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             s = c.createStatement();
@@ -80,7 +84,9 @@ public class userHandler {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("");
+            c = DriverManager.getConnection(".." + File.pathSeparator +
+                    ".." + File.pathSeparator +
+                    "resources" + File.pathSeparator + "identifier.sqlite");
             c.setAutoCommit(false);
 
             s = c.createStatement();

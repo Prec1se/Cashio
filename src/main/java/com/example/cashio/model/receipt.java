@@ -20,6 +20,13 @@ public abstract class receipt {
         itemList = new Vector<Pair<item, Integer>>();
     }
 
+    public receipt(int totalPrice, Date date, Time time, Vector<Pair<item, Integer>> itemList) {
+        this.totalPrice = totalPrice;
+        this.date = date;
+        this.time = time;
+        this.itemList = itemList;
+    }
+
     public receipt(int totalPrice, Vector<Pair<item, Integer>> itemList) {
         this.totalPrice = totalPrice;
         date = new Date();
@@ -40,6 +47,5 @@ public abstract class receipt {
     }
 
     public Time getTime() { return time; }
-
 
 }

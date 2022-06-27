@@ -14,6 +14,14 @@ public class item {
         this.name = name;
         this.price = price;
         this.count = count;
+        minimumCount = 0;
+    }
+
+    public item(String name, int price, int count, int minimumCount) {
+        this.name = name;
+        this.price = price;
+        this.count = count;
+        this.minimumCount = minimumCount;
     }
 
     public String getName() {
@@ -39,10 +47,21 @@ public class item {
         allItem = itemHandler.getAllItem();
     }
 
-    public void addNewItem(String _name, int _price, int _count) {
-        item i = new item(_name, _price, _count);
+    public static void addNewItem(item i) {
         allItem.add(i);
         // add to db ()
         itemHandler.addItem(i);
+    }
+
+    public static void deleteItem(item i) {
+
+    }
+
+    public static void setPrice() {
+
+    }
+
+    public static void setCount(String name, int count) {
+        itemHandler.updateItemCount(name, count);
     }
 }
